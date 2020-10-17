@@ -55,7 +55,7 @@ function any(){
         var awidth = dwidth;
         $(this).parent().height(dheight);
         cardheight = dheight;
-        $(this).parent().width(iwidth);
+         $(this).parent().width(dwidth);
 
         if(dheight>iheight){
             //width needs to increase
