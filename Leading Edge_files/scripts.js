@@ -27,10 +27,10 @@ var width = $(".projects-container").width();
 tri.css({"margin-left":((width+30)/projects/2-15-20)+"px"});
 
 
-var letpics=[];
-var letcardl=0;
-var lecardheight=0;
-var lecardwidth=0;
+var tpics=[];
+var tcardl=0;
+var cardheight=0;
+var cardwidth=0;
 $(window).on('resize', function(){
     var win = $(this); //this = window
     any();
@@ -55,7 +55,7 @@ function any(){
         var awidth = dwidth;
         $(this).parent().height(dheight);
         cardheight = dheight;
-         $(this).parent().width(iwidth);
+        $(this).parent().width(dwidth);
 
         if(dheight>iheight){
             //width needs to increase
@@ -216,4 +216,5 @@ function lc(){
     });
     $(".team-card").height(tcardl);
 }
+
 
